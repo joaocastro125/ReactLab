@@ -4,9 +4,9 @@ import {Video} from '../components/Video'
 
 export function Event(){
     return (
-       <div>
+       <div className="flex flex-col min-h-screen">
          <Headers />
-        <main>
+        <main className='flex flex-1'>
             <Video />
            <Sidebar />
         </main>
