@@ -37,3 +37,8 @@ para manipular datas JavaScript em um navegador e Node.js .
 
 tem uma pasta no date-fns - dois metodos chamado ispast que hora passado e format que vai formatar a data 
 
+biblioteca para adicionar video no reactjs 
+
+vime
+instando:npm i @vime/core @vime/react --force
+

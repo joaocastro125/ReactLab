@@ -1,12 +1,15 @@
 import {CaretRight, DiscordLogo, FileArrowDown, Lightning} from 'phosphor-react'
+import { Player } from '@vime/react'
 
 export function Video (){
     return ( 
         <div className="flex-1">
             <div className="bg-black flex justify-center">
-             <div className="h-full w-full max-w-[1080px] max-h-[60vh]  aspect-video"></div>
+             <div className="h-full w-full max-w-[860px] max-h-[60vh]  aspect-video">
+                <Player />
              </div>
-             <div className="p-8 max-w-[1080px] mx-auto">
+             </div>
+             <div className="p-8 max-w-[860px] mx-auto">
                 <div className="flex items-start gap-16">
                     <div className="flex-1">
                         <h1 className="text-2xl  font-bold">
@@ -39,24 +42,36 @@ export function Video (){
                         </a>
                     </div>
                     </div>
-
-                    <div className="gab-8 mt-20 grid grid-cols-2">
-                        <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+                    
+                </div>
+                <div className="gab-10 mt-20  grid grid-cols-2">
+                        <a href="" className="bg-gray-700 rounded overflow-hidden mr-4 flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
                          <div className="bg-green-700 h-full p-6 flex items-center">
                             <FileArrowDown size={40}
                             />
                          </div>
                          <div className="py-6 leading-relaxed">
                                 <strong>Material Complementar</strong>
+                                <p className="text-[10.5px]">Acesse o material complementar para acelerar o seu desenvolvimento</p>
                          </div>
                          <div className="h-full p-6 flex items-center">
                             <CaretRight size={24} />
                          </div>
                         </a>
-                        <a href=""></a>
+                        <a href="" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
+                         <div className="bg-green-700 h-full p-6 flex items-center">
+                            <FileArrowDown size={40}
+                            />
+                         </div>
+                         <div className="py-6 leading-relaxed">
+                                <strong>Wallpapers exclusivos</strong>
+                                <p className="text-[10.5px]">Baixe wallpapers exclusivos do Ignite Lab e personalize a sua máquina</p>
+                         </div>
+                         <div className="h-full p-6 flex items-center">
+                            <CaretRight size={24} />
+                         </div>
+                        </a>
                     </div>
-                    
-                </div>
                 
              </div>
         </div>
